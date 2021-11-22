@@ -23,9 +23,8 @@ jobs:
           registry-url: 'https://registry.npmjs.org/'
       - run: npm install
       # Publish to npm
-      - run:
-      npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
-      npm publish --access public
+      - run: npm config set //registry.npmjs.org/:_authToken ${NPM_TOKEN}
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       # Setup .npmrc file to publish to GitHub Packages
