@@ -1,6 +1,6 @@
-# TypeScript Package Starter
+# Random Word Generator
 
-TypeScript boilerplate for NPM or Github Packages
+Random Word Generator
 
 ## Build project
 
